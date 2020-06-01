@@ -1,0 +1,49 @@
+.btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+.btn-form {
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 12px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #77A0CC;
+  border: 1px solid #77A0CC;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    background-color: #92B9E3;
+  }
+}
+
+.add-new {
+  color: #77A0CC;
+  font-size: 34px;
+  cursor: pointer;
+
+  &:hover {
+    color: #92B9E3;
+  }
+}
+
+.add-new-p {
+  p {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+
+}

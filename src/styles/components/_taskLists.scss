@@ -1,0 +1,79 @@
+.task-list {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 20px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 40px;
+  }
+
+  .header {
+    .header-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  p {
+    font-weight: 600;
+  }
+
+  .list-item {
+    &__button {
+      margin-right: 12px;
+    }
+
+    p {
+      margin-top: -2px;
+    }
+  }
+
+  &--blue {
+    background-color: #D0D0DB;
+    color: #32326A;
+
+    .done {
+      border-top: 1px solid #B0B0C5;
+      color: #6D6D93;
+    }
+
+  }
+
+  &--peach {
+    background-color: #FCE3CE;
+    color: #77301A;
+
+    .done {
+      border-top: 1px solid #D8C0AC;
+      color: #996A5C;
+    }
+
+  }
+
+  &--teal {
+    background-color: #D0DBDB;
+    color: #0F4747;
+
+    .done {
+      border-top: 1px solid #B5C5C5;
+      color: #4C7272;
+    }
+
+  }
+
+  .done {
+    margin-top: 10px;
+    padding-top: 10px;
+    // border-top: 1px solid #B0B0C5;
+    // color: #6D6D93;
+
+    .fas {
+      margin-right: 12px;
+      color: #6D9370;
+    }
+  }
+}
+
+.select {
+  margin-left: 12px;
+}

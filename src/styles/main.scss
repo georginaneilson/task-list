@@ -1,0 +1,80 @@
+@import "./reset.scss";
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Headings and grid
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/mixins/clearfix";
+@import "~bootstrap/scss/mixins/grid-framework";
+@import "~bootstrap/scss/mixins/image";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/forms";
+
+//button
+@import "~bootstrap/scss/buttons";
+
+// utils
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/clearfix";
+
+
+//font-awesome
+$fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+
+// Components
+@import './components/buttons.scss';
+@import './components/taskLists.scss';
+@import './components/header.scss';
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+  background-image: url("../static/cloud-mobile.png");
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(sm) {
+    background-image: url("../static/cloud.png");
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: url("../static/cloud.png");
+    min-height: 100%;
+  }
+
+}
+
+html {
+  @include media-breakpoint-up(md) {
+    min-height: 100%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+//util shortcuts
+.u-no-margin {
+  margin-bottom: 0;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Jason",
+    "tasks": [
+      "Service the fuselage",
+      "Service the landing gear"
+    ],
+    "completedTasks": [],
+    "color": "blue"
+  },
+  {
+    "name": "Gemma",
+    "tasks": [
+      "Check navigation equipment"
+    ],
+    "completedTasks": [
+      "Adjust flight controls"
+    ],
+    "color": "peach"
+  },
+  {
+    "name": "Sam",
+    "tasks": [],
+    "completedTasks": [
+      "Test oxygen system"
+    ],
+    "color": "teal"
+  }
+]
